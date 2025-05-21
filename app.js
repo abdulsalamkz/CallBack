@@ -6,8 +6,14 @@ function greet() {
   console.log("Hello");
 }
 
-function age(callBack) {
-  console.log(21);
+function name(callBack) {
+  console.log('Abdul Salam');
   callBack();
 }
-age(greet);
+name(greet);
+
+function sayHello() {
+  console.log("Hello World");
+}
+
+setTimeout(sayHello, 7000);
