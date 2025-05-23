@@ -49,9 +49,6 @@
 
 // getStudentName("Saad")
 
-
-
-
 // function getStudentName(name, callBack) {
 //   setTimeout(() => {
 //     callBack("Hello " + name);
@@ -64,10 +61,6 @@
 
 // getStudentName("Saad", greet);
 
-
-
-
-
 // function getStudentName(name) {
 //   return "Hello " + name;
 // }
@@ -78,3 +71,18 @@
 
 // let result = getStudentName("Saad");
 // greet(result);
+
+function sayHello(name, callBack) {
+  setTimeout(() => {
+    const a = "Hello " + name;
+    console.log(a);
+    callBack();
+  }, 2000);
+}
+
+function greet() {
+  const a = "Loading";
+  console.log(a);
+}
+
+sayHello("Saad", greet);
